@@ -10,6 +10,8 @@ RUN set -x && \
         apt-get update && \
         apt-get upgrade -y && \
         apt-get install --no-install-recommends --no-install-suggests -y \
+                curl \
+                gnupg \
                 wget && \
         apt-get clean
 

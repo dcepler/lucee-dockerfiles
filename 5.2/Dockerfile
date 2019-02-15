@@ -1,9 +1,15 @@
-FROM tomcat:8.0.53-jre8
+FROM tomcat:8-jre8
 
-MAINTAINER Daemonites <hello@daemon.com.au>
+MAINTAINER David Epler <dcepler@dcepler.net>
 
 ENV LUCEE_JARS_URL http://release.lucee.org/rest/update/provider/loader/5.2.9.31
 ENV LUCEE_JAVA_OPTS "-Xms256m -Xmx512m"
+
+# update OS and install wget
+RUN set -x && \
+        apt-get update && \
+        apt-get upgrade -y && \
+        apt-get clean
 
 # Download core JAR, and delete it in one step to avoid committing the installer in a FS layer
 RUN wget -nv $LUCEE_JARS_URL -O /root/lucee.jar && \
