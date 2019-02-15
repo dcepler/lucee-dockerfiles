@@ -1,4 +1,4 @@
-FROM tomcat:8-jre8
+FROM tomcat:8.5-jre8
 
 MAINTAINER David Epler <dcepler@dcepler.net>
 
