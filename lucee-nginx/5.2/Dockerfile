@@ -1,6 +1,6 @@
-FROM lucee/lucee52:latest
+FROM dcepler/lucee52:latest
 
-MAINTAINER Daemonites <hello@daemon.com.au>
+MAINTAINER David Epler <dcepler@dcepler.net>
 
 # Install nginx and supervisord
 COPY nginx_signing.key /tmp/nginx_signing.key

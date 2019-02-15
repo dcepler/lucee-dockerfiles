@@ -1,8 +1,6 @@
 # Dockerfiles for Lucee application servers
 
-Dockerfiles to build Lucee application servers.; used for the official LAS Lucee Docker images.
-
-Lucee Docker images are available on Docker Hub: https://hub.docker.com/u/lucee/
+**This is a FORK of the official LAS Lucee Docker images.**
 
 ## Lucee Base Images
 
@@ -11,44 +9,16 @@ Lucee provides a number of different base images for your Lucee project.
 ### Lucee 5.2
 
 - [nginx + Tomcat 8.0-JRE8](./lucee-nginx/5.2/) &nbsp; &nbsp;
-  [![docker pulls](https://img.shields.io/docker/pulls/lucee/lucee52-nginx.svg?label=docker+pulls)](https://hub.docker.com/r/lucee/lucee52-nginx/)
-  [![](https://images.microbadger.com/badges/image/lucee/lucee52-nginx.svg)](https://microbadger.com/images/lucee/lucee52-nginx)
+  [![docker pulls](https://img.shields.io/docker/pulls/dcepler/lucee52-nginx.svg?label=docker+pulls)](https://hub.docker.com/r/dcepler/lucee52-nginx/)
+  [![](https://images.microbadger.com/badges/image/dcepler/lucee52-nginx.svg)](https://microbadger.com/images/dcepler/lucee52-nginx)
 - [Tomcat 8.0-JRE8](./5.2/) &nbsp; &nbsp;
-  [![docker pulls](https://img.shields.io/docker/pulls/lucee/lucee52.svg?label=docker+pulls)](https://hub.docker.com/r/lucee/lucee52/)
-  [![](https://images.microbadger.com/badges/image/lucee/lucee52.svg)](https://microbadger.com/images/lucee/lucee52)
-
-### Lucee 5.1
-
-- [nginx + Tomcat 8.0-JRE8](./lucee-nginx/5.1/) &nbsp; &nbsp;
-  [![docker pulls](https://img.shields.io/docker/pulls/lucee/lucee51-nginx.svg?label=docker+pulls)](https://hub.docker.com/r/lucee/lucee51-nginx/)
-  [![](https://images.microbadger.com/badges/image/lucee/lucee51-nginx.svg)](https://microbadger.com/images/lucee/lucee51-nginx)
-- [Tomcat 8.0-JRE8](./5.1/) &nbsp; &nbsp;
-  [![docker pulls](https://img.shields.io/docker/pulls/lucee/lucee51.svg?label=docker+pulls)](https://hub.docker.com/r/lucee/lucee51/)
-  [![](https://images.microbadger.com/badges/image/lucee/lucee51.svg)](https://microbadger.com/images/lucee/lucee51)
-
-### Lucee 5.0
-
-- [nginx + Tomcat 8.0-JRE8](./lucee-nginx/5.0/) &nbsp; &nbsp;
-  [![docker pulls](https://img.shields.io/docker/pulls/lucee/lucee5-nginx.svg?label=docker+pulls)](https://hub.docker.com/r/lucee/lucee5-nginx/)
-  [![](https://images.microbadger.com/badges/image/lucee/lucee5-nginx.svg)](https://microbadger.com/images/lucee/lucee5-nginx)
-- [Tomcat 8.0-JRE8](./5.0/) &nbsp; &nbsp;
-  [![docker pulls](https://img.shields.io/docker/pulls/lucee/lucee5.svg?label=docker+pulls)](https://hub.docker.com/r/lucee/lucee5/)
-  [![](https://images.microbadger.com/badges/image/lucee/lucee5.svg)](https://microbadger.com/images/lucee/lucee5)
-
-### Lucee 4.5
-
-- [nginx + Tomcat 8.0-JRE8](./lucee-nginx/4.5/) &nbsp; &nbsp;
-  [![docker pulls](https://img.shields.io/docker/pulls/lucee/lucee4-nginx.svg?label=docker+pulls)](https://hub.docker.com/r/lucee/lucee4-nginx/)
-  [![](https://images.microbadger.com/badges/image/lucee/lucee4-nginx.svg)](https://microbadger.com/images/lucee/lucee4-nginx)
-- [Tomcat 8.0-JRE8](./4.5/) &nbsp; &nbsp;
-  [![docker pulls](https://img.shields.io/docker/pulls/lucee/lucee4.svg?label=docker+pulls)](https://hub.docker.com/r/lucee/lucee4/)
-  [![](https://images.microbadger.com/badges/image/lucee/lucee4.svg)](https://microbadger.com/images/lucee/lucee4)
-
+  [![docker pulls](https://img.shields.io/docker/pulls/dcepler/lucee52.svg?label=docker+pulls)](https://hub.docker.com/r/dcepler/lucee52/)
+  [![](https://images.microbadger.com/badges/image/dcepler/lucee52.svg)](https://microbadger.com/images/dcepler/lucee52)
 
 ## Example Project Dockerfile
 
 ```
-FROM lucee/lucee51-nginx:latest
+FROM dcepler/lucee52-nginx:latest
 
 # NGINX configs
 COPY config/nginx/ /etc/nginx/
@@ -61,8 +31,6 @@ COPY www /var/www
 ## Features
 
 ### Java optimisation tweaks
-
-- Lucee 4's [Java Agent](http://blog.getrailo.com/post.cfm/railo-4-1-smarter-template-compilation) is enabled for better memory management of compiled CFML code.
 
 - JVM is set to [use /dev/urandom as an entropy source for secure random numbers](http://support.run.pivotal.io/entries/59869725-Java-Web-Applications-Slow-Startup-or-Failing) to avoid blocking Tomcat on startup.
 

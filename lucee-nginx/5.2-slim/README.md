@@ -1,17 +1,17 @@
-# Lucee 5.0 on Tomcat 8-jre8 with nginx
+# Lucee 5.2 on Tomcat 8-jre8 with nginx
 
-[![](https://images.microbadger.com/badges/image/lucee/lucee5-nginx.svg)](https://microbadger.com/images/lucee/lucee5-nginx)
+[![](https://images.microbadger.com/badges/image/lucee/lucee52-nginx.svg)](https://microbadger.com/images/lucee/lucee52-nginx)
 
 [Lucee](http://www.lucee.org/) application engine running on [Apache Tomcat](https://tomcat.apache.org/) J2EE application server and [nginx](http://nginx.org/) HTTP server. 
 
-For latest official stable release:
+For latest stable release:
 ```
-FROM lucee/lucee5-nginx:latest
+FROM lucee/lucee52-nginx:latest
 ```
 
 For a specific version:
 ```
-FROM lucee/lucee5-nginx:5.0.0.98
+FROM lucee/lucee52-nginx:5.2.9.31
 ```
 
 ## Features
