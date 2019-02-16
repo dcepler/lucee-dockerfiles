@@ -1,4 +1,4 @@
-FROM tomcat:8.5-jre8-slim
+FROM tomcat:8.0.53-jre8-slim
 
 MAINTAINER David Epler <dcepler@dcepler.net>
 

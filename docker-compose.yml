@@ -12,6 +12,13 @@ lucee52-slim:
   #volumes:
     # - /workbench/lucee-dockerfiles/5.2/lucee-server.xml:/opt/lucee/server/lucee-server/context/lucee-server.xml
     # - /workbench/lucee-dockerfiles/5.2/lucee-web.xml:/opt/lucee/web/lucee-web.xml.cfm
+lucee52-alpine:
+  build: ./5.2-alpine
+  ports:
+   - "8252:8888"
+  #volumes:
+    # - /workbench/lucee-dockerfiles/5.2/lucee-server.xml:/opt/lucee/server/lucee-server/context/lucee-server.xml
+    # - /workbench/lucee-dockerfiles/5.2/lucee-web.xml:/opt/lucee/web/lucee-web.xml.cfm
 
 lucee52-nginx:
   build: ./lucee-nginx/5.2
