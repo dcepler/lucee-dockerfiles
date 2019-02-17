@@ -5,7 +5,7 @@ MAINTAINER David Epler <dcepler@dcepler.net>
 ENV LUCEE_JARS_URL http://release.lucee.org/rest/update/provider/loader/5.2.9.31
 ENV LUCEE_JAVA_OPTS "-Xms256m -Xmx512m"
 
-# update OS and install wget
+# update OS
 RUN set -x && \
         apt-get update && \
         apt-get upgrade -y && \

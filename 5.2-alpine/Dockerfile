@@ -10,8 +10,6 @@ RUN set -x && \
         apk update && \
         apk upgrade && \
         apk add \
-                curl \
-                gnupg \
                 wget
 
 # Download core JAR, and delete it in one step to avoid committing the installer in a FS layer
