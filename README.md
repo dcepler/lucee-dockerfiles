@@ -14,12 +14,18 @@ Lucee provides a number of different base images for your Lucee project.
 - [nginx + Tomcat 8.0.53-JRE8-slim](./lucee-nginx/5.2-slim/) &nbsp; &nbsp;
   [![docker pulls](https://img.shields.io/docker/pulls/dcepler/lucee52-nginx-slim.svg?label=docker+pulls)](https://hub.docker.com/r/dcepler/lucee52-nginx-slim/)
   [![](https://images.microbadger.com/badges/image/dcepler/lucee52-nginx-slim.svg)](https://microbadger.com/images/dcepler/lucee52-nginx-slim)
+- [nginx + Tomcat 8.0.53-JRE8-alpine](./lucee-nginx/5.2-alpine/) &nbsp; &nbsp;
+  [![docker pulls](https://img.shields.io/docker/pulls/dcepler/lucee52-nginx-alpine.svg?label=docker+pulls)](https://hub.docker.com/r/dcepler/lucee52-nginx-alpine/)
+  [![](https://images.microbadger.com/badges/image/dcepler/lucee52-nginx-alpine.svg)](https://microbadger.com/images/dcepler/lucee52-nginx-alpine)
 - [Tomcat 8.0.53-JRE8](./5.2/) &nbsp; &nbsp;
   [![docker pulls](https://img.shields.io/docker/pulls/dcepler/lucee52.svg?label=docker+pulls)](https://hub.docker.com/r/dcepler/lucee52/)
   [![](https://images.microbadger.com/badges/image/dcepler/lucee52.svg)](https://microbadger.com/images/dcepler/lucee52)
-- [Tomcat 8.0.53-JRE8-slim](./5.2/) &nbsp; &nbsp;
+- [Tomcat 8.0.53-JRE8-slim](./5.2-slim/) &nbsp; &nbsp;
   [![docker pulls](https://img.shields.io/docker/pulls/dcepler/lucee52-slim.svg?label=docker+pulls)](https://hub.docker.com/r/dcepler/lucee52-slim/)
   [![](https://images.microbadger.com/badges/image/dcepler/lucee52-slim.svg)](https://microbadger.com/images/dcepler/lucee52-slim)
+- [Tomcat 8.0.53-JRE8-alpine](./5.2-alpine/) &nbsp; &nbsp;
+  [![docker pulls](https://img.shields.io/docker/pulls/dcepler/lucee52-alpine.svg?label=docker+pulls)](https://hub.docker.com/r/dcepler/lucee52-alpine/)
+  [![](https://images.microbadger.com/badges/image/dcepler/lucee52-alpine.svg)](https://microbadger.com/images/dcepler/lucee52-alpine)
 
 ## Example Project Dockerfile
 
